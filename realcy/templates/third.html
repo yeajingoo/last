@@ -1,0 +1,26 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block content %}
+  
+  <h1 style ="color:#ffffff;">골라보자(진짜 애정이 담긴 물품임;;)</h1>
+  
+      
+  
+  <div class = "flex-container">
+      
+  <img src="{% static '/css/ponyo4.jpeg' %}" height="400", width="300">
+  <img src="{% static '/css/apeach3.jpeg' %}" height="400", width="300">
+  <img src="{% static '/css/coke2.jpeg' %}" height="400", width="300">
+  <img src="{% static '/css/calcul6.jpeg' %}" height="400", width="300">
+ <h2 style ="color:#ffffff;">당신의 선택은?</h2>
+  
+  <a href="{% url 'products:create' %}">예진이의 손때가 담긴 포뇨 애착인형</a><br>
+  <a href="{% url 'products:create' %}">안들어가는게 없는 어피치 슬액희통</a><br>
+  <a href="{% url 'products:create' %}">컬렉션으로 샀지만 언제 마실지 모르는 콜라</a><br>
+  <a href="{% url 'products:create' %}">구예진의 피땀 눈물이 담길 미적분학</a><br>
+  <a href="{% url 'second' %}">다 별론디 시방 지금 이걸 사라는겨 말라는겨;;</a><br>
+  
+  </div>
+ 
+  
+{% endblock %}

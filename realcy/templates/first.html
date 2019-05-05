@@ -1,0 +1,11 @@
+{% extends 'base.html' %}
+
+{% block content %}
+  <h1 style ="color:#ffffff;">낙찰받으실 분의 성함이 궁금해요</h1>
+  <form action="{% url 'fifth' %}" method="POST">
+      {% csrf_token %}
+      <input type="text" name="name"/>
+      
+      <input type="submit" value="고고"/>
+  </form>
+{% endblock %}

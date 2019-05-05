@@ -1,0 +1,13 @@
+{% extends 'base.html' %}
+{% load staticfiles %}
+
+{% block content %}
+<h1 style ="color:#ffffff;">초대장을 검사하겠습니다.</h1>
+
+   <img src="{% static '/css/invitation.jpeg' %}"></img>
+   <button class="button"><a href="{% url 'third' %}">확인되셨습니다.</a>></button>
+   
+   
+
+   
+{% endblock %}

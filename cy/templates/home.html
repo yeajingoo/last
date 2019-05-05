@@ -1,0 +1,17 @@
+{% extends 'base.html' %}
+{% load static %}
+
+
+{% block content %}
+<h1 style ="color:#ffffff;">예진이의 애장품 경매</h1>
+<div class="container">
+<h2 style ="color:#ffffff;">올해 딱 한번만 열리는 구예진의 애장품 경매</h2>
+
+
+<h3 style ="color:#ffffff;">멋사 회원 한정 초대장 지참 필수</h3>
+<button class="button"><a href="{% url 'forth' %}">좋아. 뭐가 있나 보러 갈까~</a><br></button>
+<button class="button"><a href="{% url 'second' %}">싫어.안 살래~</a></button>
+</div>  
+
+
+{% endblock %}

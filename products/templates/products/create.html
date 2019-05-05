@@ -1,0 +1,22 @@
+{% extends 'base.html' %}
+
+
+
+
+{% block content %}
+<h1 style ="color:#ffffff;">얼마에 낙찰하실 건가요?</h1>
+<form action="{% url 'products:create' %}" method="POST">
+    {% csrf_token %}
+    <label style ="color:#ffffff;">당신이 살 물건의 이름</label><br>
+    <input type="text" name="title"><br><br>
+    
+    <label style ="color:#ffffff;">희망낙찰가</label><br>
+    <input type="number" name="price"><br><br>
+    
+    <label style ="color:#ffffff;">자기pr</label><br>
+    <textarea name="description"></textarea><br><br>
+    
+    <input type="submit" class="btn btn-primary" value="등록">
+    
+</form>
+{% endblock %}
